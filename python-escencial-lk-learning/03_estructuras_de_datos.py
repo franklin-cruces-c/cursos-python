@@ -41,6 +41,46 @@ print(t_lenguajes[-1])
 #t_lenguajes[0]= "java"  # las tuplas no permiten modificar los valores de sus elementos
 # TypeError: 'tuple' object does not support item assignment
 
-#diccionarios
+#diccionarios -> similar a hashmaps de java o json en javascript
+ 
 
-#set
+lenguaje_diccionario = { 
+    "nombre":"python",
+    "creador": "Guido"
+}
+print(lenguaje_diccionario)
+print(lenguaje_diccionario["nombre"]) #acceder a elementos por clave
+
+lenguaje_diccionario["anio_lanzamiento"]=1991
+print(lenguaje_diccionario)
+
+
+
+lenguaje_diccionario["anio_lanzamiento"]=1991
+print(lenguaje_diccionario)
+
+lenguaje_diccionario["caracteristicas"]=['sencillo','facil',"genial"]
+print(lenguaje_diccionario)
+print(lenguaje_diccionario.items())
+print(lenguaje_diccionario.keys())
+print(lenguaje_diccionario.values())
+
+#set igual que en java no permite valores repetidos. Si se agregan los omite
+
+set1= {1,2,3}
+print(set1)
+set2= {1,1,1,2,3,3}
+print(set2)
+set3= {1,2.0,"Texto", True}
+print(set3)
+set3.add(4) # agregar un elemento
+print(set3)
+set1.update([4,5,6]) # actualizar el set agregando una lista de elementos
+print(set1)
+print(len(set1)) # cantidad de elementos que tiene el set
+set1.discard(6) # eliminar un elemento del set (se hace por valor ej: 6)
+print(set1) 
+set1.remove(3) # eleminar un elemento -> genera error si el elemento no existe
+print(set1)
+set1.clear() # limpia el set, lo deja vacío
+print(set1)
