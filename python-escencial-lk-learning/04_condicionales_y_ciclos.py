@@ -64,4 +64,36 @@ while i <= 5:
   i += 1
   if(i == 3):
     break
-  
+ # iterando sobre una lista
+print("iterando sobre una lista") 
+
+lenguajes = ["python","java","golang"]
+for elemento in lenguajes:
+   print(elemento)
+print("ahora con for index")
+for index in range(len(lenguajes)):
+  print("indice",index)
+  print("lenguaje->",lenguajes[index])
+
+print("***** iterando sobre una lista con while")
+i=0
+n= len(lenguajes)
+
+while(i<n):
+  print(lenguajes[i])
+  i+=1
+
+print("***** Iterando sobre un diccionario ciclo For")
+lenguaje = {
+  "nombre": "python",
+  "creador": "Guido van Rossum"
+}
+
+for clave in lenguaje:
+  print("clave:", clave)
+  print("valor",lenguaje[clave])
+
+print("***** con items")
+
+for elemento in lenguaje.items():
+  print(elemento)
